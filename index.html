@@ -2,70 +2,28 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="./img/brand.png">
-<link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <meta charset="utf-8">
-    <meta name="description" content="MVP.css - No classes, no framework. Just semantic HTML and you're done.">
+    <title>Vue 3 Quickstart</title>
+    <link rel="icon" href="./favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Group F prototype: SIM card for NGO's IOT</title>
+    <!-- Vue.js 3.0 (development build) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.1/vue.global.js"></script>
+
+    <!-- Water.css - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="https://andybrewer.github.io/mvp/">LOGO</a>
-            <ul>
-                <li>Home</li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#docs">Log in</a></li>
-            </ul>
-        </nav>
-        <h1>  A SIM card for NGO's IOT</h1>
-        <br>
-        <p>New SIM. New Portal. New Features.</p>
-        <p><a  href="#" target="_blank"><i>About</i></a><a
-                 href="#" target="_blank"><b>Get in touch</b></a></p>
-        <p>Laboris aliqua nisi lorem cupidatat quis eiusmod reprehenderit, aute enim aliqua sit nostrud. Aliqua magna amet aute proident commodo ut non. Aute et velit et commodo proident. Qui reprehenderit lorem laboris ut velit. Et occaecat laboris sit dolor ea, officia non est minim ad minim. Nulla do amet qui. In amet pariatur sit deserunt sint officia ea.</p>
-        <br>
-    </header>
-    <main>
-        <hr>
-        <section>
-            <header>
-                <h2>The SIM to rule them all.</h2>
-                <p>Broadcast SIM is not just the most powerful SIM to date, but it comes with a state of art portal where you can control, steer and maximise your Broadcast SIM experience.</div>
-            </header>
 
-        <div data-w-id="30b4f0b1-e70c-6377-e33c-9cb66ccb2370" class="container">
-          <aside><a href="#network-diversity" data-w-id="716d4de9-5529-0151-a5e8-ca7a8f11c696" style="transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); opacity: 1;" class="usp-image-container w-inline-block"><img src="images/open-sim.png" class="usp-image"></a>
-            <div class="usp-title">Complete Network Diversity</div>
-            <div class="usp-text">Connect and disconnect to over 900 networks globally on a single SIM with the ability to control networks manually.</div>
-
-       </aside>
-          <aside><a href="#data-limits" data-w-id="05de39a2-f0c5-e7b0-134f-3292f673b794" style="transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); opacity: 1;" class="usp-image-container w-inline-block"><img src="images/data-limits.png" class="usp-image"></a>
-            <div class="usp-title">No data caps or overage fees</div>
-            <div class="usp-text">Use as much or as little data as you need without worrying about extra fees or charges. You only pay for the data you use.</div>
-
-       </aside>
-          <aside><a href="#simple-integration" data-w-id="9e7e0a16-c20b-f128-67ca-cc3558fd9cb8" style="transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); opacity: 1;" class="usp-image-container w-inline-block"><img src="images/hardware.png" class="usp-image"></a>
-            <div class="usp-title">Fully Hardware Compatible</div>
-            <div class="usp-text">There's no need to buy any new equipment as Broadcast SIM is fully compatible with all of your existing hardware.</div>
-
-       </aside>
-          <aside><a href="#sim-portal" data-w-id="fc739843-a014-934a-98a3-b43a2e017bbf" style="transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg); opacity: 1;" class="usp-image-container w-inline-block"><img src="images/sim-management.png" class="usp-image"></a>
-            <div class="usp-title">Powerful SIM Management</div>
-            <div class="usp-text">Our portal allows deep network control and insight, offering real-time data usage and the power to manage SIMs remotely.</div>
-          </aside>
-        </section>
-    </main>
-    <footer>
-        <hr>
-        <p>
-            Made by groupe F
-        </p>
-    </footer>
+<div id="app">
+</div>
+<script type="module">
+    import app from './app.js'
+    const {createApp} = Vue;
+    createApp(app).mount('#app');
+</script>
 
 </body>
-
 </html>
