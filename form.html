@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./img/brand.png">
+<link rel="stylesheet" href="https://unpkg.com/mvp.css">
+<link rel="stylesheet" href="./form.css">
+    <meta charset="utf-8">
+    <meta name="description" content="MVP.css - No classes, no framework. Just semantic HTML and you're done.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group F prototype: SIM card for NGO's IOT</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://andybrewer.github.io/mvp/">LOGO</a>
+            <ul>
+                <li>Home</li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#docs">Log in</a></li>
+            </ul>
+        </nav>
+        <h1>  FORM TITLE </h1>
+    </header>
+    <main>
+     <div id="ngo_form">
+      	<div v-for='q in questions'>
+          	<h3>{{ q.question }}</h3>
+                <label v-for='ans in q.answers' in class="container">
+                    {{ ans }}
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+      	</div>
+    </div>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            Made by groupe F
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="./questions.js"></script>
+    <script src="./form.js"></script>
+   <script>
+    </script>
+</body>
+
+</html>
