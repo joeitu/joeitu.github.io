@@ -16,7 +16,6 @@ export default {
                     {{ q.answers[i-1].text }}
                   <input type="radio" :name="'radio' + qindex" :value="i" v-model="q.checked">
                   <span class="checkmark"></span>
-                  {{ q.checked }}
                 </label>
                   <p v-if="i == q.checked" style='background: lightblue'> ↪ {{ q.responses[i-1] }} </p>
                 </div>
