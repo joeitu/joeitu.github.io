@@ -9,20 +9,19 @@ export default {
         ngoform,
     },
     setup() {
-        const {ref} = Vue;
-        const page = ref(null);
-        page.value = 'ngoform'
-        return {page}
     },
     template: `
         <div id="sidebar">
             <nav>
-                <button v-on:click="page = 'homepage'">Home</button>
-                <button v-on:click="page = 'ngoform'">Form</button>
+                <a href="#"><button>Home</button></a>
+                <a href="#cases"><button>Cases</button></a>
+                <a href="#clients"><button>Clients</button></a>
+                <a href="#form"><button>Quiz</button></a>
             </nav><hr>
         </div>
         <div id="content">
-            <component :is="page || 'homepage'"></component>
+            <component :is="'homepage'"></component>
+            <component :is="'ngoform'"></component>
         </div>
     `,
   };

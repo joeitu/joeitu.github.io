@@ -11,7 +11,7 @@ export default {
 
     
     template: `
-        <h2> Clients </h2>
+        <h2 id="clients" > Clients </h2>
         <div class="row">
 	   <div class="column">
                 <h3>consequat</h3>

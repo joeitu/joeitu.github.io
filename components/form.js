@@ -3,12 +3,12 @@ import store from '../store.js'
 export default {
     name: 'ngoform',
     setup() {
-        const {ref} = Vue;
-        return {store, showAns};
+        return {store};
     },
                 // <label v-for='ans in q.answers' in class="container">
     template: `
       <div id="ngo_form">
+        <h2 id="form" > Form </h2>
       	<div v-for='(q, qindex) in store.questions'>
           	<h3>{{ q.question }}</h3>
           	<div v-for='i in q.answers.length' class="container">

@@ -5,9 +5,18 @@ export default Vue.reactive({
                 'question':
                 	'You are trying to reduce malnutrition in Malawi, how would you as an NGO monitor if your work with healthcare and food rations has done progress?',
                 'answers' : [
-                    'Be in the field and study the village. How do they behave and what routines do they have around food. You have had good experience with field questionnaires that make them answer some questions about their dietitian habits, to get an overview.',
-                    'The village special dialect creates a language barrier so you know that the easiest and quickest way is to weigh and measure the people each week. This will no give you to larger perspective, but it will give you the conditions to reduce malnutrition.',
-                    'You know that there is already a lot of data about people in the internet. You will ask for consent to collect this information, so you don’t have to be in the field but can monitor at a distance.'
+                    {
+                            text: 'Be in the field and study the village. How do they behave and what routines do they have around food. You have had good experience with field questionnaires that make them answer some questions about their dietitian habits, to get an overview.',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'The village special dialect creates a language barrier so you know that the easiest and quickest way is to weigh and measure the people each week. This will no give you to larger perspective, but it will give you the conditions to reduce malnutrition.',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'You know that there is already a lot of data about people in the internet. You will ask for consent to collect this information, so you don’t have to be in the field but can monitor at a distance.',
+                            checked: 'off',
+                    },
 
                 ],
                 'responses' : [
@@ -21,21 +30,42 @@ export default Vue.reactive({
                 'question':
     		'You want to convince a potential benefactor that your project really needs funds, but people are dying on the streets of Zambia due to civil war and rioting. How would you convince potential benefactors to support your NGO?',
                 'answers' : [
-                    'Invite them to one of the areas where the conflict is very brutal, so they can see for themselves. In doing so, your NGO will also need to buy potential benefactors plane tickets and pay for their stay before the NGO are promised anything.',
-                    'Show them pictures, but worry that they might not be convinced ',
-                    'Give them a VR-experience that is being live broadcasted from the war-torn area, so it feels like the benefactors are there, but at a lower cost as well as lower risk. '
+                    {
+                            text: 'Invite them to one of the areas where the conflict is very brutal, so they can see for themselves. In doing so, your NGO will also need to buy potential benefactors plane tickets and pay for their stay before the NGO are promised anything.',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'Show them pictures, but worry that they might not be convinced ',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'Give them a VR-experience that is being live broadcasted from the war-torn area, so it feels like the benefactors are there, but at a lower cost as well as lower risk. ',
+                            checked: 'off',
+                    },
 
                 ],
                 'responses' : [
+                    'todo',
+                    'todo',
+                    'todo'
                 ]
             },
             {
                 'question':
                 	'Due to a complicated political situation around Lake Chad, it is difficult to deliver the necessary aid for the locals. The security and accessibility are the main problems. How would you get around this?',
                 'answers' : [
-                	'Connecting small locally based emergency spaces through IoT which makes the locals and the health workers somewhat close to each other while being secure. ',
-                	'Continuing with the existing actions but putting the locals and the health workers at risk. This is what has worked up until now and all the planning regarding this has been done.  ',
-                	'Try to convince the military and non-state armed groups to ceasefire. By convincing the military forces to back down, better help can be provided for the locals of the area.  ',
+                	{
+                        	text: 'Connecting small locally based emergency spaces through IoT which makes the locals and the health workers somewhat close to each other while being secure. ',
+                        	checked: 'off',
+                	},
+                	{
+                        	text: 'Continuing with the existing actions but putting the locals and the health workers at risk. This is what has worked up until now and all the planning regarding this has been done.  ',
+                        	checked: 'off',
+                	},
+                	{
+                        	text: 'Try to convince the military and non-state armed groups to ceasefire. By convincing the military forces to back down, better help can be provided for the locals of the area.  ',
+                        	checked: 'off',
+                	},
 
                 ],
                 'responses' : [
@@ -49,9 +79,18 @@ export default Vue.reactive({
                 'question':
                 	'A small village in rural Uganda is having issues with their water supply. Due to the location of the city’s well, the water contains high levels of contamination. How would you help the village get a good and safe water supply?',
                 'answers' : [
-                    'Send a team who can stay within the village and conduct ongoing test in order to secure the water quality. Your team already has the know-how and securing the water quality would be quicker than the other solutions.   ',
-                    'Use your knowledge to educate citizens of the village to conduct the water quality tests themselves. This could potentially save your NGO the hurdle of transporting entire teams and equipment to the village. Furthermore, educating the villages citizens would result in them being able to maintain a good water supply themselves. ',
-                    'Implement a remote water-monitoring solution based on our IoT platform and monitor the water quality remotely. Remote monitoring ensures live data on the water quality and does not require education and allocation of limited NGO resources.   '
+                    {
+                            text: 'Send a team who can stay within the village and conduct ongoing test in order to secure the water quality. Your team already has the know-how and securing the water quality would be quicker than the other solutions.   ',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'Use your knowledge to educate citizens of the village to conduct the water quality tests themselves. This could potentially save your NGO the hurdle of transporting entire teams and equipment to the village. Furthermore, educating the villages citizens would result in them being able to maintain a good water supply themselves. ',
+                            checked: 'off',
+                    },
+                    {
+                            text: 'Implement a remote water-monitoring solution based on our IoT platform and monitor the water quality remotely. Remote monitoring ensures live data on the water quality and does not require education and allocation of limited NGO resources.   ',
+                            checked: 'off',
+                    },
 
                 ],
                 'responses' : [

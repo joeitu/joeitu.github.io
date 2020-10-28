@@ -11,7 +11,7 @@ export default {
 
     
     template: `
-        <h2> cases </h2>
+        <h2 id="cases" > cases </h2>
         <div class="row">
 	   <div class="column">
                 <h3>Minim veniam aliqua</h3>
