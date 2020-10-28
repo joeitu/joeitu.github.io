@@ -4,22 +4,21 @@ export default {
     name: 'ngoform',
     setup() {
         const {ref} = Vue;
-        const showAns = ref(true)
         return {store, showAns};
     },
                 // <label v-for='ans in q.answers' in class="container">
     template: `
       <div id="ngo_form">
-            <button v-on:click="showAns = !showAns" style='background: lightblue' >Show answer</button>
       	<div v-for='(q, qindex) in store.questions'>
           	<h3>{{ q.question }}</h3>
           	<div v-for='i in q.answers.length' class="container">
                 <label >
-                    {{ q.answers[i-1] }}
-                  <input type="radio" :name="'radio' + qindex">
+                    {{ q.answers[i-1].text }}
+                  <input type="radio" :name="'radio' + qindex" :value="i" v-model="q.checked">
                   <span class="checkmark"></span>
+                  {{ q.checked }}
                 </label>
-                  <p v-if="showAns" style='background: lightblue'> ↪ {{ q.responses[i-1] }} </p>
+                  <p v-if="i == q.checked" style='background: lightblue'> ↪ {{ q.responses[i-1] }} </p>
                 </div>
 
       	</div>
