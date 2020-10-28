@@ -11,12 +11,12 @@ export default {
     template: `
       <div id="ngo_form">
             <button v-on:click="showAns = !showAns" style='background: lightblue' >Show answer</button>
-      	<div v-for='q in store.questions'>
+      	<div v-for='(q, qindex) in store.questions'>
           	<h3>{{ q.question }}</h3>
           	<div v-for='i in q.answers.length' class="container">
                 <label >
                     {{ q.answers[i-1] }}
-                  <input type="radio" name="radio">
+                  <input type="radio" :name="'radio' + qindex">
                   <span class="checkmark"></span>
                 </label>
                   <p v-if="showAns" style='background: lightblue'> ↪ {{ q.responses[i-1] }} </p>
