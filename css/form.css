@@ -4,7 +4,6 @@
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  cursor: pointer;
   /*font-size: 22px;*/
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -12,6 +11,9 @@
   user-select: none;
 }
 
+.container label {
+  cursor: pointer;
+}
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
