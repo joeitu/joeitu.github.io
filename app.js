@@ -1,5 +1,6 @@
 import homepage from './components/home.js'
 import ngoform from './components/form.js'
+import quiz from './components/quiz.js'
 import store from './store.js'
 
 export default {
@@ -7,8 +8,10 @@ export default {
     components: {
         homepage,
         ngoform,
+        quiz,
     },
     setup() {
+        
     },
     template: `
         <div id="sidebar">
@@ -21,7 +24,7 @@ export default {
         </div>
         <div id="content">
             <component :is="'homepage'"></component>
-            <component :is="'ngoform'"></component>
+            <component :is="'quiz'" ></component>
         </div>
     `,
   };

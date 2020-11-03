@@ -4,6 +4,10 @@
   padding: 0 10px;
 }
 
+.column h3 {
+    min-height: 3em;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
