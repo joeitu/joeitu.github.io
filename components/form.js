@@ -5,7 +5,6 @@ export default {
     setup() {
         return {store};
     },
-                // <label v-for='ans in q.answers' in class="container">
     template: `
       <div id="ngo_form">
         <h2 id="form" > Form </h2>

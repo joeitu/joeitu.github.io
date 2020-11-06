@@ -35,8 +35,10 @@ export default {
     template: `
       <div id="ngo_form">
         <h2 id="form" > Form </h2>
-        <span> ICON </span>
-      	<h3>{{ store.questions[qid].question }}</h3>
+        <div class="quiztitle">
+            <img :src="store.questions[qid].img" ></img>
+          	<h3>{{ store.questions[qid].question }}</h3>
+      	</div>
       	<div class='row'>
           	<div v-for='i in store.questions[qid].answers.length' class="container">
                      <div class="flip-card column">
@@ -46,8 +48,8 @@ export default {
                     	<p> {{ store.questions[qid].answers[i-1].text }} </p>
                         </div>
                         <div class="flip-card-back">
-                          <h3>Answer</h3>
                           <p> {{ store.questions[qid].responses[i-1] }} </p>
+                          <button><a href='#'> Learn More </button>
                         </div>
                       </div>
                     </div> 
@@ -57,7 +59,8 @@ export default {
          </div>
 
       </div>
-      	<button v-on:click="prev()">Prev</button>
+      <br/>
+      	<button v-if="qid > 0" v-on:click="prev()">Prev</button>
       	<button v-on:click="next()">Next</button>
     `,
 };

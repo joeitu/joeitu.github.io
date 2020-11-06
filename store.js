@@ -2,6 +2,7 @@ export default Vue.reactive({
     /* variables starting with $ are automatically saved in localstorage */
     questions : [
             {
+                'img': './imgs/groceries.png',
                 'question':
                 	'You are trying to reduce malnutrition in Malawi, how would you as an NGO monitor if your work with healthcare and food rations has done progress?',
                 'answers' : [
@@ -27,6 +28,7 @@ export default Vue.reactive({
 
             },
             {
+                'img': './imgs/book.png',
                 'question':
     		'You want to convince a potential benefactor that your project really needs funds, but people are dying on the streets of Zambia due to civil war and rioting. How would you convince potential benefactors to support your NGO?',
                 'answers' : [
@@ -51,6 +53,7 @@ export default Vue.reactive({
                 ]
             },
             {
+                'img': './imgs/tribune.png',
                 'question':
                 	'Due to a complicated political situation around Lake Chad, it is difficult to deliver the necessary aid for the locals. The security and accessibility are the main problems. How would you get around this?',
                 'answers' : [
@@ -76,6 +79,7 @@ export default Vue.reactive({
                 // This case is based on information from: https://www.doctorswithoutborders.org/lake-chad-crisis  
             },
             {
+                'img': './imgs/water.png',
                 'question':
                 	'A small village in rural Uganda is having issues with their water supply. Due to the location of the city’s well, the water contains high levels of contamination. How would you help the village get a good and safe water supply?',
                 'answers' : [

@@ -2,3 +2,16 @@ body {
     max-width: 1000px;
 }
 
+.quiztitle img{
+    /* https://stackoverflow.com/questions/47879941/make-icons-and-title-text-align-css */
+  float: left;
+    margin-right: 20px;
+    min-height: 80px;
+    max-height: 100px;
+    min-width: 80px;
+}
+.quiztitle:after{
+    content:'';
+    display:block;
+    clear:both;
+}
