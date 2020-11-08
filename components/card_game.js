@@ -4,13 +4,16 @@ import modal from './modal.js'
 
 export default {
     name: 'card_game',
+
     components: {
         cards,
         modal,
     },
+
     props : {
         qid: Number,
     },
+
     setup(props) {
         const {ref, watchEffect} = Vue;
         const show_modal = ref(false)

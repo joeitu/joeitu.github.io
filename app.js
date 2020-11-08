@@ -24,13 +24,13 @@ export default {
 
     template: `
         <modal v-if='show_modal' @close="show_modal=!show_modal" ></modal>
-        <div id="sidebar">
+        <div id="sidebar" >
             <nav>
                 <a href="#"><button>Home</button></a>
                 <a href="#cases"><button>Cases</button></a>
                 <a href="#clients"><button>Clients</button></a>
                 <a href="#game"><button>Quiz</button></a>
-            </nav><hr>
+            </nav>
         </div>
         <div id="content">
 

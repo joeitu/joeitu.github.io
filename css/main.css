@@ -1,3 +1,6 @@
+html {
+    scroll-behavior:smooth;
+}
 body {
     max-width: 1000px;
     --color-1: #5e17eb;
@@ -6,6 +9,12 @@ body {
 }
 
 
+#sidebar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 
 h1 {
     font-family: 'Sanchez', serif;
