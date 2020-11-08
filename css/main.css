@@ -1,17 +1,27 @@
 body {
     max-width: 1000px;
+    --color-1: #5e17eb;
+    --color-2: #e63462;
+    --color-3: #edb6a3;
 }
 
-.quiztitle img{
-    /* https://stackoverflow.com/questions/47879941/make-icons-and-title-text-align-css */
-  float: left;
-    margin-right: 20px;
-    min-height: 80px;
-    max-height: 100px;
-    min-width: 80px;
+
+
+h1 {
+    font-family: 'Sanchez', serif;
+    color: var(--color-1, black);
+    text-decoration: underline   var(--color-3);
 }
-.quiztitle:after{
-    content:'';
-    display:block;
-    clear:both;
+
+h2 {
+    font-family: 'Spartan', serif;
 }
+
+h3 {
+    font-family: 'Sanchez', serif;
+}
+
+h4 {
+    font-family: 'Spartan', serif;
+}
+

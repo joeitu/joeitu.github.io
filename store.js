@@ -30,26 +30,26 @@ export default Vue.reactive({
             {
                 'img': './imgs/book.png',
                 'question':
-    		'You want to convince a potential benefactor that your project really needs funds, but people are dying on the streets of Zambia due to civil war and rioting. How would you convince potential benefactors to support your NGO?',
+    		' You want to convince a potential benefactor that your project to fund schools in Zambia really needs funds, but people are becoming sick in Zambia due to a local epidemic. How would you convince potential benefactors to support your NGO?',
                 'answers' : [
                     {
-                            text: 'Invite them to one of the areas where the conflict is very brutal, so they can see for themselves. In doing so, your NGO will also need to buy potential benefactors plane tickets and pay for their stay before the NGO are promised anything.',
+                            text: 'Invite them to one of the areas where the epidemic is, so they can see for themselves how this affects the schools in the area. In doing so, your NGO will also need to buy potential benefactors plane tickets and pay for their stay before the NGO are promised anything.',
                             checked: 'off',
                     },
                     {
-                            text: 'Show them pictures, but worry that they might not be convinced ',
+                            text: 'Show them pictures and video from the schools but worry that they might not be convinced. ',
                             checked: 'off',
                     },
                     {
-                            text: 'Give them a VR-experience that is being live broadcasted from the war-torn area, so it feels like the benefactors are there, but at a lower cost as well as lower risk. ',
+                            text: 'Give them a VR-experience that is being live broadcasted from a school in area, so it feels like the benefactors are there, but at a lower cost as well as lower risk. ',
                             checked: 'off',
                     },
 
                 ],
                 'responses' : [
-                    'todo',
-                    'todo',
-                    'todo'
+                    'Inviting potential benefactors to the war-torn area could lead to several high risks regarding both your safety as well as the benefactors. Using a VR-experience could eliminate these risks. ',
+                    'Just showing pictures and video may not be enough for convincing potential benefactors to contribute monetarily to your NGO. Showcasing a VR-experience of the current situation could potentially give a more immersive and real-to-life experience. ',
+                    'Besides the upsides already mentioned, the VR-experience is a good example of how IoT can be deployed to showcase something remotely.'
                 ]
             },
             {
@@ -98,8 +98,8 @@ export default Vue.reactive({
 
                 ],
                 'responses' : [
-                    'Despite the obvious benefit of a quick solution for the village, sending a team to conduct the testing would result in large monetary expenses to both the team and to the logistical side of things. Using a remote water-monitoring solution based on our IoT platform, your NGO could potentially save the NGO many resources. Click here to read more about the Remote Water-monitoring case.  ',
-                    'Even though that the education of the villagers would ensure that the village could monitor the water themselves, this solution is not without its downsides. Many resources would have to be used in regard to the education and continues education of the villagers. NGO employees could potentially be locked and therefore not be able to contribute to other projects.  A solution to this could be to use a remote water-monitoring solution based on our IoT platform. Click here to read more about the Remote Water-monitoring case. ',
+                    'Despite the obvious benefit of a quick solution for the village, sending a team to conduct the testing would result in large monetary expenses to both the team and to the logistical side of things. Using a remote water-monitoring solution based on our IoT platform, your NGO could potentially save the NGO many resources.  ',
+                    'Even though that the education of the villagers would ensure that the village could monitor the water themselves, this solution is not without its downsides. Many resources would have to be used in regard to the education and continues education of the villagers. NGO employees could potentially be locked and therefore not be able to contribute to other projects.  A solution to this could be to use a remote water-monitoring solution based on our IoT platform. ',
                     'By using a remote water-monitoring solution based on our IoT platform, your NGO could potentially save many resources that can be used on other projects. Click here to read more about the Remote Water-monitoring case and how other NGO’s have previously conducted projects. '
                 ]
             }
