@@ -18,29 +18,29 @@ export default {
     
     template: `
         <modal v-if='show_modal' @close='show_modal = false'/>
-        <h2 id="cases" > cases </h2>
+        <h2 id="cases" > Cases </h2>
         <div class="row">
 	   <div class="column">
-                <h3>Minim veniam aliqua</h3>
+                <h3>Lake Chad case</h3>
                 <img src="https://via.placeholder.com/400x200?text=case+illustration">
                 <p>
-		Irure et cupidatat laboris magna quis deserunt dolore. Lorem cupidatat culpa velit. Do sint sit culpa dolor commodo est. Lorem veniam esse nisi sed non aliquip in. Eiusmod dolor magna consectetur ad cillum mollit. Voluptate laboris commodo irure deserunt.
+Delivering local aid in the Lake Chad area is hard due to the political situation. One NGO has utilized IoT connection devices in order to connect small emergency spaces with each other.  
+                 </p>
+                <button @click="show_modal = !show_modal"> Learn more </button>
+           </div>
+	   <div class="column">
+                <h3>Zambia Case  </h3>
+                <img src="https://via.placeholder.com/400x200?text=case+illustration">
+                <p>
+While an American NGO was working with the funding of local schools in Zambia, the area was hit by an epidemic making it very difficult to travel to the area. This led to a fair number of problems in regard to sending potential benefactors to the area. Instead, the NGO utilized VR and IoT technology to create a safe and inclusive experience for potential benefactors.  
                 </p>
                 <button @click="show_modal = !show_modal"> Learn more </button>
            </div>
 	   <div class="column">
-                <h3>culpa do sint nulla</h3>
+                <h3>Malawi Case  </h3>
                 <img src="https://via.placeholder.com/400x200?text=case+illustration">
                 <p>
-		Sunt proident aliqua pariatur ut. Eu excepteur ut et voluptate amet laborum lorem. Elit fugiat magna non nisi commodo elit et. Id deserunt veniam nisi non. Tempor incididunt cillum sit nostrud exercitation. Voluptate incididunt velit officia amet excepteur veniam anim.
-                </p>
-                <button @click="show_modal = !show_modal"> Learn more </button>
-           </div>
-	   <div class="column">
-                <h3>id reprehenderit quis in laborum</h3>
-                <img src="https://via.placeholder.com/400x200?text=case+illustration">
-                <p>
-		Id sed tempor tempor id elit anim magna, dolore proident occaecat eiusmod dolor. Reprehenderit consequat est culpa. Officia non occaecat magna aliqua. Laborum commodo mollit ad eiusmod ad occaecat aliquip, lorem cupidatat deserunt reprehenderit laborum. Officia ipsum laborum magna sit consectetur est.
+A large NGO is currently working on a project in order to help eliminate malnutrition in Malawi. Using IoT and smart monitoring systems, they have been able to collect and analyze data that help them achieve their goal.  
                 </p>
                 <button @click="show_modal = !show_modal"> Learn more </button>
                 

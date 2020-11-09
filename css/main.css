@@ -8,13 +8,14 @@ body {
     --color-3: #edb6a3;
 }
 
-
+/*
 #sidebar {
     position: fixed;
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
+*/
 
 h1 {
     font-family: 'Sanchez', serif;
@@ -23,11 +24,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'Spartan', serif;
+    font-family: 'Sanchez', serif;
 }
 
 h3 {
-    font-family: 'Sanchez', serif;
+    font-family: 'Spartan', serif;
 }
 
 h4 {

@@ -30,7 +30,7 @@ export default {
       <div id="game" style="height: 60vh">
 
         <div v-if="qid == -1" class="centered">
-            <h1>Test you knowledge about IoT with our card game!</h1>
+            <h1> Take the quiz and see how much you know about IoT and its wide array of potentials for NGOs. </h1>
             <p>Disclaimer: There is no right and wrong answer to the questions. Each of the possible solutions have both benefits and disadvantages. The quiz is solely designed for educating and inspiring NGOs on the usage of IoT to solve issues in the third world. </p>
             <img src='https://www.shareicon.net/data/512x512/2017/01/23/874889_clipboard_512x512.png' />
         </div>
@@ -49,9 +49,7 @@ export default {
       </div>
       <br/>
       <div style="height: 20vh">
-      	<div class="centered">
-            <button class="gamebutton" v-if="qid < 0"  @click="next()">Start Quiz</button>
-        </div>
+        <button class="gamebutton" v-if="qid < 0"  @click="next()" style="float:right">Start Quiz</button>
       	<button class="gamebutton" v-if="qid >= 0" v-on:click="prev()" >Prev</button>
       	<button class="gamebutton" v-if="qid < 4 && qid >= 0" v-on:click="next()"  style="float: right" >Next</button>
         </div>
