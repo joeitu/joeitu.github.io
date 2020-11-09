@@ -25,10 +25,11 @@ export default {
     template: `
         <modal v-if='show_modal' @close="show_modal=!show_modal" ></modal>
         <div id="sidebar" >
+           <img src="./imgs/Logo.png" style="width: 150px; float:left"/>
             <nav>
                 <a href="#"><button>Home</button></a>
-                <a href="#cases"><button>Cases</button></a>
                 <a href="#clients"><button>Clients</button></a>
+                <a href="#cases"><button>Cases</button></a>
                 <a href="#game"><button>Quiz</button></a>
             </nav>
         </div>
@@ -37,12 +38,12 @@ export default {
             <homepage/>
             <div style='min-height: 70vh; display: flex; justify-content: center; align-items: center;'>
             <div>
-                <clients/>
+                <cases/>
             </div>
             </div>
             <div style='min-height: 70vh; display: flex; justify-content: center; align-items: center;'>
             <div>
-                <cases/>
+                <clients/>
             </div>
             </div>
             <div style='min-height: 90vh; display: flex; justify-content: center; align-items: center;'>

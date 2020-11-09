@@ -8,14 +8,13 @@ body {
     --color-3: #edb6a3;
 }
 
-/*
+
 #sidebar {
-    position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
 }
-*/
+
 
 h1 {
     font-family: 'Sanchez', serif;
