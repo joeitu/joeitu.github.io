@@ -28,8 +28,8 @@ export default {
            <img src="./imgs/Logo.png" style="width: 150px; float:left"/>
             <nav>
                 <a href="#"><button>Home</button></a>
-                <a href="#clients"><button>Clients</button></a>
                 <a href="#cases"><button>Cases</button></a>
+                <a href="#clients"><button>Clients</button></a>
                 <a href="#game"><button>Quiz</button></a>
             </nav>
         </div>
