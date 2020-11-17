@@ -10,11 +10,18 @@ export default {
     setup() {
         const {ref} = Vue;
         const qid = ref(-1)
+        const can_go_next = ref(false)
 
         function next(){
             if (qid.value < 4){
                 qid.value += 1
             }
+            can_go_next.value = false
+        }
+
+        function enable_next() {
+            console.log('fooo')
+            can_go_next.value = true
         }
 
         function prev(){
@@ -23,7 +30,7 @@ export default {
             }
         }
 
-        return { qid, next, prev};
+        return { qid, next, prev, enable_next, can_go_next};
     },
     
     template: `
@@ -35,7 +42,7 @@ export default {
             <img src='https://www.shareicon.net/data/512x512/2017/01/23/874889_clipboard_512x512.png' />
         </div>
 
-       <card_game v-if="qid > -1 && qid < 4" :qid="qid" ></card_game>
+       <card_game v-if="qid > -1 && qid < 4" :qid="qid" @flipped="enable_next()" ></card_game>
 
         <div v-if="qid > 3" class="centered">
         <h1> Your are done ! </h1>
@@ -51,7 +58,8 @@ export default {
       <div style="height: 20vh">
         <button class="gamebutton" v-if="qid < 0"  @click="next()" style="float:right">Start Quiz</button>
       	<button class="gamebutton" v-if="qid >= 0" v-on:click="prev()" >Prev</button>
-      	<button class="gamebutton" v-if="qid < 4 && qid >= 0" v-on:click="next()"  style="float: right" >Next</button>
+      	<button class="gamebutton" v-if="qid < 4 && qid >= 0 && can_go_next" @click="next()"  style="float: right" >Next</button>
+      	<button  v-if="qid < 4 && qid >= 0 && !can_go_next" style="float: right" disabled >Next</button>
         </div>
     `,
 };

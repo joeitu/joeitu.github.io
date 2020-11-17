@@ -14,7 +14,7 @@ export default {
         qid: Number,
     },
 
-    setup(props) {
+    setup(props, {emit}) {
         const {ref, watchEffect} = Vue;
         const show_modal = ref(false)
         const flipped = ref([false, false, false])
@@ -26,6 +26,7 @@ export default {
         function flip(i){
             // https://stackoverflow.com/questions/33731939/vue-js-toggle-class-on-click
             flipped.value[i] = ! flipped.value[i]
+            emit('flipped')
         }
         return {store,  flipped, flip , show_modal};
     },
@@ -42,7 +43,7 @@ export default {
       	<div class='row'>
           	<div v-for='i in store.questions[qid].answers.length' class="container">
                      <div class="flip-card column">
-                      <div class="flip-card-inner" :class="{flipped: flipped[i-1]}" v-on:click="flip(i-1)">
+                      <div class="flip-card-inner" :class="{flipped: flipped[i-1]}" @click="flip(i-1)">
                         <div class="flip-card-front">
                           <h3>Response {{ i }}</h3>
                     	<p> {{ store.questions[qid].answers[i-1].text }} </p>
