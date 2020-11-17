@@ -14,24 +14,24 @@ export default {
         <h2 id="clients" > Clients </h2>
         <div class="row">
 	   <div class="column">
-                <h3>consequat</h3>
+                <h3>Consequat</h3>
                 <img src="https://via.placeholder.com/400x200?text=client+logo">
                 <p>
-		Irure et cupidatat laboris magna quis deserunt dolore. Lorem cupidatat culpa velit. Do sint sit culpa dolor commodo est. Lorem veniam esse nisi sed non aliquip in. Eiusmod dolor magna consectetur client+logot.
+Did you know that you easily can use technology as a way to solve specific problems? Smart water minitorising systems can help you gather data about water supply in real time in the areas you work. This NGO used the information provided on this site to begin their journey with IoT. 
                 </p>
            </div>
 	   <div class="column">
-                <h3>dolore</h3>
+                <h3>Dolore</h3>
                 <img src="https://via.placeholder.com/400x200?text=client+logo">
                 <p>
-		Sunt proident aliqua pariatur ut. Eu excepteur ut et voluptate amet laborum lorem. Elit fugiat magna non nisi commodo elit et. Id deserunt veniam nisi non. Tempor client+logom.
+Is it also in your interest to optimize how you work with healthcare? This NGO has seen a great improvement in their results since they started tracking and tracing their work by using IoT services.
                 </p>
            </div>
 	   <div class="column">
-                <h3>duis</h3>
+                <h3>Duis</h3>
                 <img src="https://via.placeholder.com/400x200?text=client+logo">
                 <p>
-		Id sed tempor tempor id elit anim magna, dolore proident occaecat eiusmod dolor. Reprehenderit consequat est culpa. Officia non occaecat magna aliqua. Laborum commodo mollit ad eiusmod ad occaecat aliquip, lorem cupidatat deserunt reprehenderit laborum. Officia ipsum laborum magna sit consectetur est.
+When you provide connection posibilities in the areas you are present, the quality for your workers and the locals improve as well. Read about how this NGO used IoT for connecting local bases with their headquarters and then had several new opportunities and more time for the important aid they provide.  
                 </p>
                 
            </div>
