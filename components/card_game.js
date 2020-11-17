@@ -50,7 +50,7 @@ export default {
                         </div>
                         <div class="flip-card-back">
                           <p> {{ store.questions[qid].responses[i-1] }} </p>
-                          <button @click.stop="show_modal = !show_modal"> Learn More </button>
+                          <!-- <button @click.stop="show_modal = !show_modal"> Learn More </button> -->
                         </div>
                       </div>
                     </div> 
