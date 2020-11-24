@@ -39,7 +39,7 @@ export default {
             <img :src="store.questions[qid].img" >
             <h2 >{{ store.questions[qid].question }}</h2>
       	</div>
-      	<!-- TODO <div class="centered"> <progress :value="(qid +1) " max="5" style='background: white;' ></progress> </div> -->
+      	<div class="centered"> <progress :value="(qid +1) " max="5" style='background: white;' ></progress> </div> 
       	<div class='row'>
           	<div v-for='i in store.questions[qid].answers.length' class="container">
                      <div class="flip-card column">
